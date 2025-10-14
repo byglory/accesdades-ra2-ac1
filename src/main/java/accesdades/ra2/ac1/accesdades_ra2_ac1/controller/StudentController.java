@@ -7,18 +7,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
+// Controlador REST per a estudiants
 @RestController
 @RequestMapping("/api")
 public class StudentController {
+    // Endpoint per obtenir estudiants
     @GetMapping("/students")
     public String getStudent() {
         return "Endpoint get";
     }
    
+    // Endpoint per afegir estudiants en lot
     @PostMapping("/students/batch")
     public String addStudent() {
-        //TODO: process POST request
+        //TODO: processar petició POST
         return "student afegit";
     }
 }

@@ -1,10 +1,12 @@
 package accesdades.ra2.ac1.accesdades_ra2_ac1.model;
 
+// Model de dades Estudiant
 public class Student {
     private Long id;
     private String name;
     private int age;
 
+    // Getters i setters
     public Long getId() {
         return id;
     }
@@ -28,9 +30,12 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+    
+    // Constructors
     public Student(){
         
     }
+    
     public Student(int age, Long id, String name) {
         this.age = age;
         this.id = id;
